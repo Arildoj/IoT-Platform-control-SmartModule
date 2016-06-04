@@ -1,4 +1,4 @@
-# IoT-Plataform-control-SmartFarm
+# IoT-Plataform-control-SmartModule
 This is a PHP and Arduino IoT solution, developed to manage farm tasks and machines to offer more efficient production and easy administration.<br/>
 ![Sample-IoT-control](https://raw.githubusercontent.com/Arildoj/IoT-Plataform-control-SmartFarm/master/wiki/Sample-IoT_2.png)
 
