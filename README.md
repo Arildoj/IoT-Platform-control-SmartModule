@@ -46,10 +46,15 @@ Initially we have preset 3 modules:
 
 ## Growth plan for the TRex project 
 
+##References
+- Chuck Bell, Sr. Software Developer, MySQL Utilities, Oracle
+- Luis Soares, Sr. Software Engineer, MySQL Replication, Oracle<br/>
+  July 18, 2012
 
-
+<br/><br/>
+<hr>
 ## Credits
-
+**Developers**
 - [Arildo F. Rodrigues Junior](https://github.com/Arildoj)
 - [Haroldo](https://)
 - [Yann](https://)
