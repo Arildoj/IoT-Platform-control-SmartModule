@@ -56,6 +56,6 @@ Initially we have preset 3 modules:
 ## Credits
 **Developers**
 - [Arildo F. Rodrigues Junior](https://github.com/Arildoj)
-- [Haroldo](https://)
-- [Yann](https://)
+- [Haroldo Dornelas](https://)
+- [Yann F. Veiga Dias](https://)
 
