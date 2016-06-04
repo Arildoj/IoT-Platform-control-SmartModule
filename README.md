@@ -27,10 +27,10 @@ The all generate data can be manipulated direct in a web browser, visualized in 
 Is a remote server where are storage all data, information and activities of the modules. The controller of modules can be configured in this page.
 
 Manegement screens
-+ **This is a home page of modules control.**<br/>
+1 **This is a home page of modules control.**<br/>
 ![Sample-IoT-Home](https://raw.githubusercontent.com/Arildoj/IoT-Plataform-control-SmartFarm/master/wiki/home.PNG)
 <br/>
-+ **This is other page of modules control.**<br/>
+2 **This is other page of modules control.**<br/>
 ![Sample-IoT-Modulo](https://raw.githubusercontent.com/Arildoj/IoT-Plataform-control-SmartFarm/master/wiki/tela-modulo.PNG)
 <br/>
 It is programmed in PHP and the data is storage in MySQL database.
