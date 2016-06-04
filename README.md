@@ -5,7 +5,7 @@ This is a PHP and Arduino IoT solution, developed to manage farm tasks and machi
 ## FAQ 
 
 **What was the motivation?**<br/>
-The motivation begins of the actual problems found in farms to control and manage your business. Other problem we can see the interferences of human in nature, for example, today 40% of population suffer with consequences of no water supply. 
+The motivation begins of the actual problems found in farms to control and manage your business. Other problem we can see the interferences of human in nature, for example, today(2014) 40% of population suffer with consequences of no water supply. 
 We think that is a good way to increase the income and better performance in production.
 
 **Why the modular form was the better way to do it?**<br/>
