@@ -34,7 +34,7 @@ Is a remote server where are storage all data, information and activities of the
 <br/>
 It is programmed in PHP and the data is storage in MySQL database.
 
-**Modules**
+**Modules:**
 The modules are developed in Arduino platform with input sensors and output controllers.
 ![Sample-IoT-Modulo-Case](https://raw.githubusercontent.com/Arildoj/IoT-Plataform-control-SmartFarm/master/wiki/Sample-Module%3DCase.png)<br/>
 The modules are built in this case.
