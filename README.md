@@ -25,7 +25,7 @@ The all generate data can be manipulated direct in a web browser, visualized in 
 **Database Server**
 Is a remote server where are storage all data, information and activities of the modules. The controller of modules can be configured in this page.
 
-<br/>Manegement screens<br/><br/>
+<br/>Management screens<br/><br/>
 1 **This is a home page of modules control.**<br/>
 ![Sample-IoT-Home](https://raw.githubusercontent.com/Arildoj/IoT-Plataform-control-SmartFarm/master/wiki/home.PNG)
 <br/><br/><br/>
