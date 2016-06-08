@@ -182,7 +182,7 @@
 			}
 			else
 			{
-				include ('404.html'); //quando link não encontrado
+				include ('404.html'); //quando link não é encontrado
 				echo "<meta HTTP-EQUIV='Refresh' CONTENT='0;URL=index.php?link=1'>";
 			}
 		}
