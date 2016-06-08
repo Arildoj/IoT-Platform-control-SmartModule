@@ -40,8 +40,8 @@ The modules are developed in Arduino platform with input sensors and output cont
 The modules are built in this case.
 
 Initially we have preset 3 modules:
-+	Nursery plants controller
-+ Feeding animal controller
++	Plants Nursery controller
++ Animal feeding controller
 +	Water supply controller
 
 ## Growth plan for the TRex project 
