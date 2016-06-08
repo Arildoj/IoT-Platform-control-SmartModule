@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blue Moon - Responsive Admin Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Blue Moon - Responsive Admin Dashboard" />
+    <meta name="keywords" content="Notifications, Admin, Dashboard, Bootstrap3, Sass, transform, CSS3, HTML5, Web design, UI Design, Responsive Dashboard, Responsive Admin, Admin Theme, Best Admin UI, Bootstrap Theme, Wrapbootstrap, Bootstrap, bootstrap.gallery" />
+    <meta name="author" content="Bootstrap Gallery" />
+    <link rel="shortcut icon" href="img/favicon.ico">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/new.css" rel="stylesheet">
+    <!-- Important. For Theming change primary-color variable in main.css  -->
+
+    <link href="fonts/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-40304444-1', 'iamsrinu.com');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+
+  <body>
+
+    <!-- Header Start -->
+    <header>
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Logo"/>
+      </a>
+      <div class="user-profile">
+        <a data-toggle="dropdown" class="dropdown-toggle">
+          <img src="img/profile1.png" alt="Profile-Image">
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu pull-right">
+          <li>
+            <a href="#">
+              Edit Profile
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Account Settings
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="mini-nav">
+        <li>
+          <a href="#">
+            <i class="fa fa-envelope-o"></i>
+            <span class="info-label" id="quickMessages">
+              3
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-bell-o"></i>
+            <span class="info-label-green" id="quickAlerts">
+              5
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="info-label-orange" id="quickShop">
+              9
+            </span>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Container start -->
+    <div class="dashboard-container">
+
+      <div class="container">
+        <!-- Top Nav Start -->
+        <div class="top-nav hidden-xs hidden-sm">
+          <ul>
+            <li>
+              <a href="index.html">
+                <i class="fa fa-dashboard"></i>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="forms.html">
+                <i class="fa fa-align-justify"></i>
+                Forms
+              </a>
+            </li>
+            <li>
+              <a href="graphs.html">
+                <i class="fa fa-bar-chart-o"></i>
+                Graphs
+              </a>
+            </li>
+            <li>
+              <a href="ui-elements.html">
+                <i class="fa fa-flask"></i>
+                UI Elements
+              </a>
+            </li>
+            <li>
+              <a href="icons.html">
+                <i class="fa fa-suitcase"></i>
+                Icons
+              </a>
+            </li>
+            <li>
+              <a href="tables.html">
+                <i class="fa fa-table"></i>
+                Tables
+              </a>
+            </li>
+            <li>
+              <a href="media.html">
+                <i class="fa fa-picture-o"></i>
+                Media
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html">
+                <i class="fa fa-calendar"></i>
+                Calendar
+              </a>
+            </li>
+            <li>
+              <a href="typography.html" class="selected">
+                <i class="fa fa-font"></i>
+                Typography
+              </a>
+            </li>
+            <li>
+              <a href="edit-profile.html">
+                <i class="fa fa-coffee"></i>
+                Extras
+              </a>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <!-- Top Nav End -->
+
+        <!-- Sub Nav End -->
+        <div class="sub-nav">
+          <ul>
+            <li><a href="default.htm" class="heading">Typography</a></li>
+            <li class="hidden-sm hidden-xs">
+              <a href="#ulLists">Unordered List</a>
+            </li>
+            <li class="hidden-sm hidden-xs">
+              <a href="#romanList">Roman List</a>
+            </li>
+            <li class="hidden-sm hidden-xs">
+              <a href="#hDesc">Horizontal Descriptio</a>
+            </li>
+          </ul>
+          <input type="search" placeholder="Search" class="input-search hidden-xs hidden-sm" />
+          <div class="btn-group pull-right hidden-lg hidden-md">
+            <button class="btn btn-danger btn-sm">
+              <i class="fa fa-bars"></i>
+            </button>
+            <button data-toggle="dropdown" class="btn btn-danger btn-sm dropdown-toggle">
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu pull-right">
+              <li>
+                <a href="index.html" data-original-title="">
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="forms.html" data-original-title="">
+                  Forms
+                </a>
+              </li>
+              <li>
+                <a href="graphs.html" data-original-title="">
+                  Graphs
+                </a>
+              </li>
+              <li>
+                <a href="ui-elements.html" data-original-title="">
+                  UI Elements
+                </a>
+              </li>
+              <li>
+                <a href="icons.html" data-original-title="">
+                  Icons
+                </a>
+              </li>
+              <li>
+                <a href="tables.html" data-original-title="">
+                  Tables
+                </a>
+              </li>
+              <li>
+                <a href="media.html" data-original-title="">
+                  Media
+                </a>
+              </li>
+              <li>
+                <a href="calendar.html" data-original-title="">
+                  Calendar
+                </a>
+              </li>
+              <li>
+                <a href="typography.html" data-original-title="">
+                  Typography
+                </a>
+              </li>
+              <li>
+                <a href="edit-profile.html" data-original-title="">
+                  Edit Profile
+                </a>
+              </li>
+              <li>
+                <a href="invoice.html" data-original-title="">
+                  Invoice
+                </a>
+              </li>
+              <li>
+                <a href="login.html" data-original-title="">
+                  Login
+                </a>
+              </li>
+              <li>
+                <a href="404.html" data-original-title="">
+                  404 Page
+                </a>
+              </li>
+              <li>
+                <a href="500.html" data-original-title="">
+                  500 Page
+                </a>
+              </li>
+              <li>
+                <a href="help.html" data-original-title="">
+                  Help
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Sub Nav End -->
+
+        <!-- Dashboard Wrapper Start -->
+        <div class="dashboard-wrapper">
+          
+          <!-- Left Sidebar Start -->
+          <div class="left-sidebar">
+            
+            <!-- Row Start -->
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Headings &amp; Paragraphs
+                    </div>
+                    <span class="tools">
+                      <i class="fa fa-cogs"></i>
+                    </span>
+                  </div>
+                  <div class="widget-body">
+                    <div class="jumbotron">
+                      <h1>
+                        Heading-1
+                      </h1>
+                      <p>
+                        Engineer enable strategize visualize architect folksonomies reinvent; enable front-end; world-class ROI disintermediate dynamic, web-enabled efficient B2B robust tag. Deliver, benchmark, "benchmark,".
+                      </p>
+                    </div>
+                    
+                    <div class="jumbotron">
+                      <h2>
+                        Heading-2
+                      </h2>
+                      <p>
+                        Engineer enable strategize visualize architect folksonomies reinvent; enable front-end; world-class ROI disintermediate dynamic, web-enabled efficient B2B robust tag. Deliver, benchmark, "benchmark,".
+                      </p>
+                    </div>
+                    
+                    <div class="jumbotron">
+                      <h3>
+                        Heading-3
+                      </h3>
+                      <p>
+                        Engineer enable strategize visualize architect folksonomies reinvent; enable front-end; world-class ROI disintermediate dynamic, web-enabled efficient B2B robust tag. Deliver, benchmark, "benchmark,".
+                      </p>
+                    </div>
+                    
+                    <div class="jumbotron">
+                      <h4>
+                        Heading-4
+                      </h4>
+                      <p>
+                        Engineer enable strategize visualize architect folksonomies reinvent; enable front-end; world-class ROI disintermediate dynamic, web-enabled efficient B2B robust tag. Deliver, benchmark, "benchmark,".
+                      </p>
+                    </div>
+                    
+                    <div class="jumbotron">
+                      <h5>
+                        Heading-5
+                      </h5>
+                      <p>
+                        Engineer enable strategize visualize architect folksonomies reinvent; enable front-end; world-class ROI disintermediate dynamic, web-enabled efficient B2B robust tag. Deliver, benchmark, "benchmark,".
+                      </p>
+                    </div>
+                    
+                    <div class="jumbotron no-margin">
+                      <h6>
+                        Heading-6
+                      </h6>
+                      <p>
+                        Engineer enable strategize visualize architect folksonomies reinvent; enable front-end; world-class ROI disintermediate dynamic, web-enabled efficient B2B robust tag. Deliver, benchmark, "benchmark,".
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row End -->
+
+            <!-- Row Start -->
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm12 col-xs-12">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Unordered Lis<a id="ulLists">t</a>
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div class="stylish-lists">
+                      <ul>
+                        <li>
+                          Lorem ipsum dolor sit amet
+                        </li>
+                        <li>
+                          Consectetur adipiscing elit
+                        </li>
+                        <li>
+                          Nulla volutpat aliquam velit
+                          <ul>
+                            <li>
+                              Phasellus iaculis neque
+                            </li>
+                            <li>
+                              Purus sodales ultricies
+                            </li>
+                            <li>
+                              Vestibulum laoreet porttitor sem
+                            </li>
+                            <li>
+                              Ac tristique libero volutpat at
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          Faucibus porta lacus fringilla vel
+                        </li>
+                        <li>
+                          Eget porttitor lorem
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm12 col-xs-12">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Ordered List
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <ol class="no-margin">
+                      <li>
+                        Lorem ipsum dolor sit amet
+                      </li>
+                      <li>
+                        Consectetur adipiscing elit
+                      </li>
+                      <li>
+                        Integer molestie lorem at massa
+                      </li>
+                      <li>
+                        Facilisis in pretium nisl aliquet
+                      </li>
+                      <li>
+                        Nulla volutpat aliquam velit
+                      </li>
+                      <li>
+                        Faucibus porta lacus fringilla vel
+                      </li>
+                      <li>
+                        Aenean sit amet erat nunc
+                      </li>
+                      <li>
+                        Eget porttitor lorem
+                      </li>
+                      <li>
+                        Facilisis in pretium nisl aliquet
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm12 col-xs-12">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Leading Zero List
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div class="stylish-lists">
+                      <ul class="decimal-leading-zero">
+                        <li>
+                          Lorem ipsum dolor sit amet
+                        </li>
+                        <li>
+                          Consectetur adipiscing elit
+                        </li>
+                        <li>
+                          Nulla volutpat aliquam velit
+                          <ul class="decimal-leading-zero">
+                            <li>
+                              Phasellus iaculis neque
+                            </li>
+                            <li>
+                              Purus sodales ultricies
+                            </li>
+                            <li>
+                              Vestibulum laoreet porttitor sem
+                            </li>
+                            <li>
+                              Ac tristique libero volutpat at
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          Aenean sit amet erat nunc
+                        </li>
+                        <li>
+                          Eget porttitor lorem
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row End -->
+
+            <!-- Row Start -->
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm12 col-xs-12">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Letter List
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div class="stylish-lists">
+                      <ul class="upper-alpha">
+                        <li>
+                          Lorem ipsum dolor sit amet
+                        </li>
+                        <li>
+                          Consectetur adipiscing elit
+                        </li>
+                        <li>
+                          Nulla volutpat aliquam velit
+                        </li>
+                        <li>
+                          Faucibus porta lacus fringilla vel
+                        </li>
+                        <li>
+                          Eget porttitor lorem
+                        </li>
+                        <li>
+                          Lorem ipsum dolor sit amet
+                        </li>
+                        <li>
+                          Consectetur adipiscing elit
+                        </li>
+                        <li>
+                          Nulla volutpat aliquam velit
+                        </li>
+                        <li>
+                          Faucibus porta lacus fringilla vel
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm12 col-xs-12">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Roman Lis<a id="romanList">t</a>
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div class="stylish-lists">
+                      <ul class="roman-list">
+                        <li>
+                          Lorem ipsum dolor sit amet
+                        </li>
+                        <li>
+                          Consectetur adipiscing elit
+                        </li>
+                        <li>
+                          Integer molestie lorem at massa
+                        </li>
+                        <li>
+                          Facilisis in pretium nisl aliquet
+                        </li>
+                        <li>
+                          Nulla volutpat aliquam velit
+                        </li>
+                        <li>
+                          Faucibus porta lacus fringilla vel
+                        </li>
+                        <li>
+                          Aenean sit amet erat nunc
+                        </li>
+                        <li>
+                          Eget porttitor lorem
+                        </li>
+                        <li>
+                          Facilisis in pretium nisl aliquet
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm12 col-xs-12">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Lower Alpha List
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div class="stylish-lists">
+                      <ul class="lower-alpha">
+                        <li>
+                          Lorem ipsum dolor sit amet
+                        </li>
+                        <li>
+                          Consectetur adipiscing elit
+                        </li>
+                        <li>
+                          Nulla volutpat aliquam velit
+                          <ul class="lower-alpha">
+                            <li>
+                              Phasellus iaculis neque
+                            </li>
+                            <li>
+                              Purus sodales ultricies
+                            </li>
+                            <li>
+                              Vestibulum laoreet porttitor sem
+                            </li>
+                            <li>
+                              Ac tristique libero volutpat at
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          Aenean sit amet erat nunc
+                        </li>
+                        <li>
+                          Eget porttitor lorem
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row End -->
+
+            <!-- Row Start -->
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Blockquote
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <blockquote>
+                      <span class="title">
+                        Article 1
+                      </span>
+                      <p>
+                        Markets mindshare; compelling citizen-media cross-platform leading-edge, ecologies revolutionary; beta-test web-enabled; revolutionize. Interactive.
+                      </p>
+                    </blockquote>
+                    
+                    <blockquote>
+                      <span class="title">
+                        Article 2
+                      </span>
+                      <p>
+                        Wikis optimize mesh, "tagclouds productize communities," convergence user-centred, streamline best-of-breed user-centric. Convergence functionalities niches deploy brand, "social portals," networks harness.
+                      </p>
+                      <small>
+                        Someone famous 
+                        <cite title="Source Title">
+                          Source Title
+                        </cite>
+                      </small>
+                    </blockquote>
+                    
+                    <blockquote class="no-margin">
+                      <span class="title">
+                        Article 3
+                      </span>
+                      <p>
+                        Wikis optimize mesh, "tagclouds productize communities," convergence user-centred, streamline best-of-breed user-centric. Convergence functionalities niches deploy brand, "social portals," networks harness.
+                      </p>
+                      <small>
+                        Someone famous 
+                        <cite title="Source Title">
+                          Source Title
+                        </cite>
+                      </small>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row End -->
+
+            <!-- Row Start -->
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="widget no-margin">
+                  <div class="widget-header">
+                    <div class="title">
+                      Descriptio<a id="description">n</a>
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div class="stylish-lists">
+                      <dl class="no-margin">
+                        <dt class="text-danger">
+                          Description lists
+                        </dt>
+                        <dd>
+                          A description list is perfect for defining terms.
+                        </dd>
+                        <dt class="text-danger">
+                          Euismod
+                        </dt>
+                        <dd>
+                          Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+                        </dd>
+                        <dd>
+                          Donec id elit non mi porta gravida at eget metus.
+                        </dd>
+                        <dt class="text-danger">
+                          Malesuada porta
+                        </dt>
+                        <dd>
+                          Etiam porta sem malesuada magna mollis euismod.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="widget no-margin">
+                  <div class="widget-header">
+                    <div class="title">
+                      Horizontal Descriptio<a id="hDesc">n</a>  
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div class="stylish-lists">
+                      <dl class="dl-horizontal no-margin">
+                        <dt  class="text-info">
+                          Description lists
+                        </dt>
+                        <dd>
+                          A description list is perfect for defining terms.
+                        </dd>
+                        <dt  class="text-info">
+                          Euismod
+                        </dt>
+                        <dd>
+                          Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+                        </dd>
+                        <dd>
+                          Donec id elit non mi porta gravida at eget metus.
+                        </dd>
+                        <dt  class="text-info">
+                          Malesuada porta
+                        </dt>
+                        <dd>
+                          Etiam porta sem malesuada magna
+                        </dd>
+                        <dt  class="text-info">
+                          Felis euismod semper eget lacinia
+                        </dt>
+                        <dd>
+                          Fusce dapibus, tellus ac.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row End -->
+
+          </div>
+          <!-- Left Sidebar End -->
+
+          <!-- Right Sidebar Start -->
+          <div class="right-sidebar">
+            <div class="wrapper">
+              <button class="btn btn-lg btn-block btn-info" type="button">
+                Block level button
+              </button>
+              <button class="btn btn-lg btn-block btn-warning" type="button">
+                Block level button
+              </button>
+              <button class="btn btn-lg btn-block btn-success" type="button">
+                Block level button
+              </button>
+            </div>
+            
+            <hr class="hr-stylish-1">
+            
+            <div class="wrapper">
+              <button class="btn btn-lg btn-info btn-block" type="button">
+                Large button
+              </button>
+              <button class="btn btn-warning btn-block" type="button">
+                Default button
+              </button>
+              <button class="btn btn-sm btn-success btn-block" type="button">
+                Small button
+              </button>
+              <button class="btn btn-xs btn-primary btn-block" type="button">
+                Mini button
+              </button>
+              <a href="#" class="btn btn-xs btn-default disabled btn-block">
+                Primary link
+              </a>
+              <a href="#" class="btn btn-xs disabled btn-block">
+                Link
+              </a>
+            </div>
+            
+            <hr class="hr-stylish-1">
+            
+            <div class="wrapper">
+              <a class="btn btn-sm btn-success" href="default.htm">Link</a>
+              <button class="btn btn-sm btn-success" type="submit">Button</button>
+              <input class="btn btn-sm btn-success" type="button" value="Input">
+            </div>
+            
+            <hr class="hr-stylish-1">
+            
+            <div class="wrapper">
+              <div class="hero-unit no-margin" style="padding: 10px;">
+                <h1 class="text-info">Head1</h1>
+                <h2 class="text-warning">Heading 2</h2>
+                <h3 class="text-danger">Heading 3</h3>
+                <h4 class="text-success">Heading 4</h4>
+                <h5 class="text-info">Heading 5</h5>
+                <h6>Heading 6</h6>
+              </div>
+            </div>
+          </div>
+          <!-- Right Sidebar End -->
+
+        </div>
+        <!-- Dashboard Wrapper End -->
+
+        <footer>
+          <p>© BlueMoon 2013</p>
+        </footer>
+
+      </div>
+    </div>
+    <!-- Main Container end -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollUp.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+    
+    <script type="text/javascript">
+      //ScrollUp
+      $(function () {
+        $.scrollUp({
+          scrollName: 'scrollUp', // Element ID
+          topDistance: '300', // Distance from top before showing element (px)
+          topSpeed: 300, // Speed back to top (ms)
+          animation: 'fade', // Fade, slide, none
+          animationInSpeed: 400, // Animation in speed (ms)
+          animationOutSpeed: 400, // Animation out speed (ms)
+          scrollText: 'Scroll to top', // Text for element
+          activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        });
+      });
+
+      //Tooltip
+      $('a').tooltip('hide');
+
+      //Popover
+      $('.popover-pop').popover('hide');
+
+      //Dropdown
+      $('.dropdown-toggle').dropdown();
+
+    </script>
+
+  </body>
+</html>

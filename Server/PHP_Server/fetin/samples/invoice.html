@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blue Moon - Responsive Admin Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Blue Moon - Responsive Admin Dashboard" />
+    <meta name="keywords" content="Notifications, Admin, Dashboard, Bootstrap3, Sass, transform, CSS3, HTML5, Web design, UI Design, Responsive Dashboard, Responsive Admin, Admin Theme, Best Admin UI, Bootstrap Theme, Wrapbootstrap, Bootstrap, bootstrap.gallery" />
+    <meta name="author" content="Bootstrap Gallery" />
+    <link rel="shortcut icon" href="img/favicon.ico">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/new.css" rel="stylesheet">
+    <!-- Important. For Theming change primary-color variable in main.css  -->
+
+    <link href="fonts/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-40304444-1', 'iamsrinu.com');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+
+  <body>
+
+    <!-- Header Start -->
+    <header>
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Logo"/>
+      </a>
+      <div class="user-profile">
+        <a data-toggle="dropdown" class="dropdown-toggle">
+          <img src="img/profile1.png" alt="Profile-Image">
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu pull-right">
+          <li>
+            <a href="#">
+              Edit Profile
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Account Settings
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="mini-nav">
+        <li>
+          <a href="#">
+            <i class="fa fa-envelope-o"></i>
+            <span class="info-label" id="quickMessages">
+              3
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-bell-o"></i>
+            <span class="info-label-green" id="quickAlerts">
+              5
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="info-label-orange" id="quickShop">
+              9
+            </span>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Container start -->
+    <div class="dashboard-container">
+
+      <div class="container">
+        <!-- Top Nav Start -->
+        <div class="top-nav hidden-xs hidden-sm">
+          <ul>
+            <li>
+              <a href="index.html">
+                <i class="fa fa-dashboard"></i>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="forms.html">
+                <i class="fa fa-align-justify"></i>
+                Forms
+              </a>
+            </li>
+            <li>
+              <a href="graphs.html">
+                <i class="fa fa-bar-chart-o"></i>
+                Graphs
+              </a>
+            </li>
+            <li>
+              <a href="ui-elements.html">
+                <i class="fa fa-flask"></i>
+                UI Elements
+              </a>
+            </li>
+            <li>
+              <a href="icons.html">
+                <i class="fa fa-suitcase"></i>
+                Icons
+              </a>
+            </li>
+            <li>
+              <a href="tables.html">
+                <i class="fa fa-table"></i>
+                Tables
+              </a>
+            </li>
+            <li>
+              <a href="media.html">
+                <i class="fa fa-picture-o"></i>
+                Media
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html">
+                <i class="fa fa-calendar"></i>
+                Calendar
+              </a>
+            </li>
+            <li>
+              <a href="typography.html">
+                <i class="fa fa-font"></i>
+                Typography
+              </a>
+            </li>
+            <li>
+              <a href="edit-profile.html" class="selected">
+                <i class="fa fa-coffee"></i>
+                Extras
+              </a>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <!-- Top Nav End -->
+
+        <!-- Sub Nav End -->
+        <div class="sub-nav">
+          <ul>
+            <li><a href="default.htm" class="heading">Extras</a></li>
+            <li class="hidden-sm hidden-xs">
+              <a href="edit-profile.html">
+                Edit profile
+              </a>
+            </li>
+            <li class="hidden-sm hidden-xs">
+              <a href="invoice.html" class="selected">
+                Invoice
+              </a>
+            </li>
+            <li class="hidden-sm hidden-xs">
+              <a href="login.html">
+                Login
+              </a>
+            </li>
+            <li class="hidden-sm hidden-xs">
+              <a href="404.html">
+                404
+              </a>
+            </li>
+            <li class="hidden-sm hidden-xs">
+              <a href="500.html">
+                500
+              </a>
+            </li>
+            <li class="hidden-sm hidden-xs">
+              <a href="help.html">
+                Help
+              </a>
+            </li>
+          </ul>
+          <input type="search" placeholder="Search" class="input-search hidden-xs hidden-sm" />
+          <div class="btn-group pull-right hidden-lg hidden-md">
+            <button class="btn btn-danger btn-sm">
+              <i class="fa fa-bars"></i>
+            </button>
+            <button data-toggle="dropdown" class="btn btn-danger btn-sm dropdown-toggle">
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu pull-right">
+              <li>
+                <a href="index.html" data-original-title="">
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="forms.html" data-original-title="">
+                  Forms
+                </a>
+              </li>
+              <li>
+                <a href="graphs.html" data-original-title="">
+                  Graphs
+                </a>
+              </li>
+              <li>
+                <a href="ui-elements.html" data-original-title="">
+                  UI Elements
+                </a>
+              </li>
+              <li>
+                <a href="icons.html" data-original-title="">
+                  Icons
+                </a>
+              </li>
+              <li>
+                <a href="tables.html" data-original-title="">
+                  Tables
+                </a>
+              </li>
+              <li>
+                <a href="media.html" data-original-title="">
+                  Media
+                </a>
+              </li>
+              <li>
+                <a href="calendar.html" data-original-title="">
+                  Calendar
+                </a>
+              </li>
+              <li>
+                <a href="typography.html" data-original-title="">
+                  Typography
+                </a>
+              </li>
+              <li>
+                <a href="edit-profile.html" data-original-title="">
+                  Edit Profile
+                </a>
+              </li>
+              <li>
+                <a href="invoice.html" data-original-title="">
+                  Invoice
+                </a>
+              </li>
+              <li>
+                <a href="login.html" data-original-title="">
+                  Login
+                </a>
+              </li>
+              <li>
+                <a href="404.html" data-original-title="">
+                  404 Page
+                </a>
+              </li>
+              <li>
+                <a href="500.html" data-original-title="">
+                  500 Page
+                </a>
+              </li>
+              <li>
+                <a href="help.html" data-original-title="">
+                  Help
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Sub Nav End -->
+
+        <!-- Dashboard Wrapper Start -->
+        <div class="dashboard-wrapper">
+          
+          <!-- Left Sidebar Start -->
+          <div class="left-sidebar">
+            
+            <!-- Row Start -->
+            <div class="row">
+              <div class="col-md-12 col-lg-12">
+                <nav class="navbar navbar-default" role="navigation">
+                  <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">Month</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Jan</a></li>
+                        <li><a href="#">Feb</a></li>
+                        <li><a href="#">Mar</a></li>
+                        <li><a href="#">Apr</a></li>
+                        <li><a href="#">May</a></li>
+                        <li><a href="#">June</a></li>
+                        <li><a href="#">July</a></li>
+                        <li><a href="#">Aug</a></li>
+                        <li><a href="#">Sep</a></li>
+                        <li><a href="#">Oct</a></li>
+                        <li><a href="#">Nov</a></li>
+                        <li><a href="#">Dec</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <!-- Row End -->
+
+            <!-- Row Start -->
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Invoices for March
+                    </div>
+                    <span class="tools">
+                      <i class="fa fa-cogs"></i>
+                    </span>
+                  </div>
+                  <div class="widget-body">
+                    <div class="table-responsive">
+                      <table class="table table-condensed table-striped table-bordered table-hover no-margin">
+                        <thead>
+                          <tr>
+                            <th style="width:10%">
+                              No.
+                            </th>
+                            <th style="width:15%">
+                              Date
+                            </th>
+                            <th style="width:30%" class="hidden-phone">
+                              Description
+                            </th>
+                            <th style="width:10%" class="hidden-phone">
+                              Qnty
+                            </th>
+                            <th style="width:10%" class="hidden-phone">
+                              VAT
+                            </th>
+                            <th style="width:10%" class="hidden-phone">
+                              Total
+                            </th>
+                            <th style="width:15%" class="hidden-phone">
+                              Actions
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              #310934
+                            </td>
+                            <td>
+                              14-02-1214
+                            </td>
+                            <td class="hidden-phone">
+                              Drive synergies rich viral...
+                            </td>
+                            <td class="hidden-phone">
+                              4
+                            </td>
+                            <td class="hidden-phone">
+                              <span class="label label-info">
+                                2.24%
+                              </span>
+                            </td>
+                            <td class="hidden-phone">
+                              50.00$
+                            </td>
+                            <td class="hidden-phone">
+                              <a href="#" class="btn btn-warning btn-xs">
+                                View
+                              </a>
+                              <a href="#" class="btn btn-info btn-xs">
+                                Edit
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              #265049
+                            </td>
+                            <td>
+                              13-02-1214
+                            </td>
+                            <td class="hidden-phone">
+                              Incentivize user-contributed...
+                            </td>
+                            <td class="hidden-phone">
+                              21
+                            </td>
+                            <td class="hidden-phone">
+                              <span class="label label-info">
+                                6.59%
+                              </span>
+                            </td>
+                            <td class="hidden-phone">
+                              130.00$
+                            </td>
+                            <td class="hidden-phone">
+                              <a href="#" class="btn btn-warning btn-xs">
+                                View
+                              </a>
+                              <a href="#" class="btn btn-info btn-xs">
+                                Edit
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              #443567
+                            </td>
+                            <td>
+                              11-02-1214
+                            </td>
+                            <td class="hidden-phone">
+                              Enable innovate tagclouds...
+                            </td>
+                            <td class="hidden-phone">
+                              9
+                            </td>
+                            <td class="hidden-phone">
+                              <span class="label label-info">
+                                2.50%
+                              </span>
+                            </td>
+                            <td class="hidden-phone">
+                              220.00$
+                            </td>
+                            <td class="hidden-phone">
+                              <a href="#" class="btn btn-warning btn-xs">
+                                View
+                              </a>
+                              <a href="#" class="btn btn-info btn-xs">
+                                Edit
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              #480998
+                            </td>
+                            <td>
+                              18-02-1214
+                            </td>
+                            <td class="hidden-phone">
+                              Tagclouds dynamic, intuitive...
+                            </td>
+                            <td class="hidden-phone">
+                              7
+                            </td>
+                            <td class="hidden-phone">
+                              <span class="label label-info">
+                                3.124%
+                              </span>
+                            </td>
+                            <td class="hidden-phone">
+                              530.00$
+                            </td>
+                            <td class="hidden-phone">
+                              <a href="#" class="btn btn-warning btn-xs">
+                                View
+                              </a>
+                              <a href="#" class="btn btn-info btn-xs">
+                                Edit
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              #550347
+                            </td>
+                            <td>
+                              13-02-1214
+                            </td>
+                            <td class="hidden-phone">
+                              Front-end web services...
+                            </td>
+                            <td class="hidden-phone">
+                              27
+                            </td>
+                            <td class="hidden-phone">
+                              <span class="label label-info">
+                                4.57%
+                              </span>
+                            </td>
+                            <td class="hidden-phone">
+                              350.00$
+                            </td>
+                            <td class="hidden-phone">
+                              <a href="#" class="btn btn-warning btn-xs">
+                                View
+                              </a>
+                              <a href="#" class="btn btn-info btn-xs">
+                                Edit
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row End -->
+
+            <!-- Row Start -->
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="widget no-margin">
+                  <div class="widget-header">
+                    <div class="title">
+                      Invoice no #310934
+                    </div>
+                    <span class="tools">
+                      <i class="fa fa-cogs"></i>
+                    </span>
+                  </div>
+                  <div class="widget-body">
+                    <div class="invoice">
+                      <div class="invoice-head">
+                        <img src="img/logo-grey.png" alt="logo" class="logo">
+                        <div class="invoice-info">
+                          <span>
+                            Invoice #310934
+                          </span>
+                          <br>
+                          <span class="date">
+                            14-04-2014
+                          </span>
+                        </div>
+                      </div>
+                      <div class="invoice-data-container">
+                        <div class="from">
+                          <h5>
+                            Company Name
+                          </h5>
+                          <span>
+                            Address,
+                          </span>
+                          <span>
+                            Phone: 1234 5678 90, Fax: 123 456 7890,
+                          </span>
+                          <span>
+                            Payment due 19/10/2013
+                          </span>
+                        </div>
+                      </div>
+                      <div class="table-responsive">
+                        <table class="table table-condensed table-striped table-bordered table-hover no-margin">
+                          <thead>
+                            <tr>
+                              <th style="width:10%">
+                                Invoice No.
+                              </th>
+                              <th style="width:10%">
+                                Date
+                              </th>
+                              <th style="width:50%" class="hidden-phone">
+                                Description
+                              </th>
+                              
+                              <th style="width:10%" class="hidden-phone">
+                                Quantity
+                              </th>
+                              <th style="width:10%" class="hidden-phone">
+                                VAT
+                              </th>
+                              <th style="width:10%" class="hidden-phone">
+                                Total
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                #310934
+                              </td>
+                              <td>
+                                14-04-1213
+                              </td>
+                              <td class="hidden-phone">
+                                Incentivize platforms Incentivize platforms user-contributed user-contributed...
+                              </td>
+                              <td class="hidden-phone">
+                                4
+                              </td>
+                              <td class="hidden-phone">
+                                2.24%
+                              </td>
+                              <td class="hidden-phone">
+                                50.00$
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                #265049
+                              </td>
+                              <td>
+                                13-04-1213
+                              </td>
+                              <td class="hidden-phone">
+                                Enable innovate leverage tagclouds Incentivize platforms user-contributed...
+                              </td>
+                              <td class="hidden-phone">
+                                21
+                              </td>
+                              <td class="hidden-phone">
+                                6.59%
+                              </td>
+                              <td class="hidden-phone">
+                                130.00$
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                #480998
+                              </td>
+                              <td>
+                                18-04-1213
+                              </td>
+                              <td class="hidden-phone">
+                                E-business front-end web services Enable innovate leverage tagclouds...
+                              </td>
+                              <td class="hidden-phone">
+                                9
+                              </td>
+                              <td class="hidden-phone">
+                                2.50%
+                              </td>
+                              <td class="hidden-phone">
+                                220.00$
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="total" colspan="5">
+                                Subtotal
+                              </td>
+                              <td class="hidden-phone">
+                                400.00$
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="total" colspan="5">
+                                Tax (9.25%)
+                              </td>
+                              <td class="hidden-phone">
+                                3000.00$
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="total" colspan="5">
+                                Discount
+                              </td>
+                              <td class="hidden-phone">
+                                400%
+                              </td>
+                            </tr>
+                            <tr class="success">
+                              <td class="total" colspan="5">
+                                Total
+                              </td>
+                              <td class="hidden-phone">
+                                3000.00$
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row End -->
+
+          </div>
+          <!-- Left Sidebar End -->
+
+          <!-- Right Sidebar Start -->
+          <div class="right-sidebar">
+            <div class="wrapper">
+              <div class="list-group no-margin">
+                <a href="javascript:;" class="list-group-item">
+                  <span class="pull-right">
+                    <i class="fa fa-file fa-3x text-info"></i>
+                  </span>
+                  <h4 class="list-group-item-heading">239</h4>
+                  <p class="list-group-item-text">Files</p>
+                </a>
+                <a href="javascript:;" class="list-group-item">
+                  <span class="pull-right">
+                    <i class="fa fa-check-square-o fa-3x text-warning"></i>
+                  </span>
+                  <h4 class="list-group-item-heading">11689</h4>
+                  <p class="list-group-item-text">Paid</p>
+                </a>
+                <a href="javascript:;" class="list-group-item">
+                  <span class="pull-right">
+                    <i class="fa fa-square-o fa-3x text-success"></i>
+                  </span>
+                  <h4 class="list-group-item-heading">831</h4>
+                  <p class="list-group-item-text">Due</p>      
+                </a>
+              </div>
+            </div>
+            
+            <hr>
+            
+            <div class="wrapper">
+              <ul class="month-income">
+                <li>
+                  <span class="icon-block blue-block">
+                    <i class="fa fa-html5 fa-lg"></i>
+                  </span>
+                  <h5>
+                    @srinubasava 
+                    <small class="info-fade">
+                      Developer
+                    </small>
+                  </h5>
+                  <p>
+                    10 minutes ago
+                  </p>
+                </li>
+                <li>
+                  <span class="icon-block orange-block">
+                    <i class="fa fa-apple fa-lg"></i>
+                  </span>
+                  <h5>
+                    @prempillai 
+                    <small class="info-fade">
+                      Sr. Developer
+                    </small>
+                  </h5>
+                  <p>
+                    28 minutes ago
+                  </p>
+                </li>
+                <li>
+                  <span class="icon-block green-block">
+                    <i class="fa fa-github fa-lg"></i>
+                  </span>
+                  <h5>
+                    @arjunurs 
+                    <small class="info-fade">
+                      Developer
+                    </small>
+                  </h5>
+                  <p>
+                    14 minutes ago
+                  </p>
+                </li>
+                <li>
+                  <span class="icon-block red-block">
+                    <i class="fa fa-xing fa-lg"></i>
+                  </span>
+                  <h5>
+                    @gajjugujju 
+                    <small class="info-fade">
+                      Team Leader
+                    </small>
+                  </h5>
+                  <p>
+                    28 minutes ago
+                  </p>
+                </li>
+                <li>
+                  <span class="icon-block yellow-block">
+                    <i class="fa fa-css3 fa-lg"></i>
+                  </span>
+                  <h5>
+                    @boomer 
+                    <small class="info-fade">
+                      Business
+                    </small>
+                  </h5>
+                  <p>
+                    28 minutes ago
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <!-- Right Sidebar End -->
+
+        </div>
+        <!-- Dashboard Wrapper End -->
+
+        <footer>
+          <p>© BlueMoon 2014</p>
+        </footer>
+
+      </div>
+    </div>
+    <!-- Main Container end -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollUp.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+    
+    <script type="text/javascript">
+      //ScrollUp
+      $(function () {
+        $.scrollUp({
+          scrollName: 'scrollUp', // Element ID
+          topDistance: '300', // Distance from top before showing element (px)
+          topSpeed: 300, // Speed back to top (ms)
+          animation: 'fade', // Fade, slide, none
+          animationInSpeed: 400, // Animation in speed (ms)
+          animationOutSpeed: 400, // Animation out speed (ms)
+          scrollText: 'Scroll to top', // Text for element
+          activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        });
+      });
+
+      //Tooltip
+      $('a').tooltip('hide');
+
+      //Popover
+      $('.popover-pop').popover('hide');
+
+      //Dropdown
+      $('.dropdown-toggle').dropdown();
+
+    </script>
+
+  </body>
+</html>
